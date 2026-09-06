@@ -1,0 +1,6 @@
+{
+  "name": "FIBIZZ - Registro de Marcas",
+  "description": "Diagnóstico claro de registrabilidade e estratégia completa para proteger sua marca no INPI.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

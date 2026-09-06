@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Anton&family=Barlow+Condensed:wght@800;900&family=Oswald:wght@700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+@font-face {
+  font-family: 'Sundry Condensed Heavy';
+  src:
+    url('/fonts/SundryCondensed-Heavy.woff2') format('woff2'),
+    url('/fonts/SundryCondensed-Heavy.woff') format('woff'),
+    url('/fonts/SundryCondensed-Heavy.otf') format('opentype'),
+    url('/fonts/SundryCondensed-Heavy.ttf') format('truetype'),
+    url('/fonts/Sundry-CondensedHeavy.otf') format('opentype'),
+    url('/fonts/SundryCondensedHeavy.otf') format('opentype'),
+    url('/fonts/SundryCondensedHeavy.ttf') format('truetype'),
+    url('/fonts/Sundry.otf') format('opentype'),
+    local('Sundry Condensed Heavy'),
+    local('Sundry-CondensedHeavy'),
+    local('SundryCondensed-Heavy'),
+    local('SundryCondensedHeavy'),
+    local('Sundry Condensed'),
+    local('Sundry');
+  font-weight: 800 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Sundry Condensed';
+  src:
+    url('/fonts/SundryCondensed-Heavy.woff2') format('woff2'),
+    url('/fonts/SundryCondensed-Heavy.woff') format('woff'),
+    url('/fonts/SundryCondensed-Heavy.otf') format('opentype'),
+    url('/fonts/SundryCondensed-Heavy.ttf') format('truetype'),
+    local('Sundry Condensed Heavy'),
+    local('Sundry-CondensedHeavy'),
+    local('SundryCondensed-Heavy'),
+    local('Sundry Condensed');
+  font-weight: 700 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Montserrat", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Sundry Condensed Heavy", "Sundry Condensed", "Sundry", "Barlow Condensed", "Anton", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  
+  --color-brand-blue: #2D6CDF;
+  --color-brand-dark: #0B0F1A;
+  --color-brand-card: #121824;
+  --color-brand-border: #1E2736;
+}
+
+/* Custom styles for smooth experience */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-brand-dark);
+  color: #F4F7FF;
+}
+
+/* Ensure all titles across the site use Sundry Condensed Heavy */
+h1, h2, h3, h4, h5, h6, .font-display {
+  font-family: var(--font-display);
+}
+
+/* Hide scrollbar for carousel */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
